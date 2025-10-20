@@ -16,7 +16,7 @@ function highlightText(element) {
       element,
       NodeFilter.SHOW_TEXT,
       {
-        acceptNode: function(node) {
+        acceptNode(node) {
           // Skip if parent already has our marker class
           if (node.parentNode.closest('.hyperlink-processed')) {
             return NodeFilter.FILTER_REJECT;
