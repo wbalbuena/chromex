@@ -11,10 +11,15 @@
         {
             "js": ["scripts/content.js"],
             "matches": [
-                "https://*.com/*",
                 "https://developer.chrome.com/docs/extensions/*",
                 "https://developer.chrome.com/docs/webstore/*"
             ]
         }
-    ]
+    ],
+    "web_accessible_resources": [
+    {
+        "resources": ["mag-glass.png"],
+        "matches": ["<all_urls>"]
+    }
+]
 }
